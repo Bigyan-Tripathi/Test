@@ -1,0 +1,275 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #F4F6F8;
+    color: #2E3440;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #1C2635;
+    padding: 20px;
+    box-shadow: 0 4px 10px #B9C2CE;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.logo img {
+    border-radius: 10px;
+}
+
+header h1 {
+    color: #E8EDF5;
+    font-size: 22px;
+    text-align: center;
+    margin: 10px 0 0;
+    width: 100%;
+}
+
+.search-form input[type="text"] {
+    padding: 9px;
+    border: 1px solid #C8D0DA;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    color: #2E3440;
+}
+
+.search-form button {
+    padding: 9px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #2F6FED;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.search-form button:hover {
+    background-color: #1E5AD6;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+nav a {
+    color: #D9E2EF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #8FB8FF;
+}
+
+#about,
+#skills,
+#project,
+#education,
+#contact,
+#Connect {
+    background-color: #FFFFFF;
+    padding: 30px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px #D6DCE4;
+    transition: 0.3s;
+}
+
+#about:hover,
+#skills:hover,
+#project:hover,
+#education:hover,
+#contact:hover,
+#Connect:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 24px #C3CCD8;
+}
+
+#about h1,
+#skills h2,
+#project h2,
+#education h2,
+#contact h2,
+#Connect h3 {
+    color: #1F3A5F;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.about.me {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.about p {
+    max-width: 700px;
+}
+
+.about img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px #C3CCD8;
+}
+
+#skills .myskills {
+    text-align: center;
+}
+
+.myskills dt {
+    color: #1F3A5F;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.myskills dd {
+    color: #4A5568;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+#project article {
+    background-color: #F4F6F8;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 8px;
+    border: 1px solid #E2E7ED;
+    box-shadow: 0 2px 8px #D6DCE4;
+    transition: 0.3s;
+}
+
+#project article:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 18px #C3CCD8;
+    background-color: #FAFBFD;
+}
+
+#project article h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #1F3A5F;
+}
+
+#project article p {
+    line-height: 1.6;
+}
+
+#education table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+#education th {
+    background-color: #1F3A5F;
+    color: #FFFFFF;
+    padding: 12px;
+}
+
+#education td {
+    background-color: #FAFBFD;
+    padding: 12px;
+    border: 1px solid #E2E7ED;
+}
+
+#education tr:hover td {
+    background-color: #EDF1F7;
+}
+
+#contact form {
+    max-width: 600px;
+    margin: auto;
+}
+
+#contact label {
+    font-weight: bold;
+    color: #1F3A5F;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #C8D0DA;
+    border-radius: 6px;
+    box-sizing: border-box;
+    background-color: #FFFFFF;
+    color: #2E3440;
+}
+
+#contact textarea {
+    resize: vertical;
+}
+
+#contact button {
+    background-color: #2F6FED;
+    color: #FFFFFF;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#contact button:hover {
+    background-color: #1E5AD6;
+}
+
+.connect {
+    text-align: center;
+}
+
+.connect img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.connect img:hover {
+    transform: translateY(-4px) scale(1.05);
+    box-shadow: 0 4px 12px #2F6FED;
+}
+
+footer {
+    background-color: #1C2635;
+    color: #D9E2EF;
+    text-align: center;
+    padding: 30px;
+    margin-top: 20px;
+    box-shadow: 0 -4px 10px #B9C2CE;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .about.me {
+        flex-direction: column;
+        text-align: center;
+    }
+}
